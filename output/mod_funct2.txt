@@ -1,0 +1,13 @@
+
+Call:
+phylo.modularity(A = m_modtest, partition.gp = mods, phy = tree.m.pruned,      iter = 999, print.progress = F) 
+
+
+
+CR: 1.1636
+
+P-value: 0.0025
+
+Effect Size: -2.3662
+
+Based on 1000 random permutations

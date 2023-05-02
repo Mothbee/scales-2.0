@@ -1,0 +1,17 @@
+
+Call:
+
+
+Observed Rate Ratio: 2.3814
+
+P-value: 0.079
+
+Effect Size: 1.4075
+
+Based on 1000 random permutations
+
+The rate for group A is 0.0213701108865926  
+
+The rate for group B is 0.0508916529896679  
+
+The rate for group C is 0.0311493696073617 

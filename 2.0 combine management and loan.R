@@ -1,4 +1,4 @@
-setwd("/Users/moth/Downloads/SCALE PROJECT/Analysis/R/michelle_scales_desktop")
+setwd("/Users/moth/Downloads/SCALE PROJECT/Analysis/R/scales-2.0")
 
 #gitcreds::gitcreds_set()
 
@@ -29,7 +29,7 @@ library(readr)
 
 ##### read in data template (collection info, raw scale csv file names) ####
 # will have to update this name every time !!
-specimen_management_raw <- read.csv("2.0 Specimen Management.csv",
+specimen_management_raw <- read.csv("2.0 Specimen Management-2023-04-24 12:45:21.csv",
                                     header = T)
 specimen_management_raw$specimen.number <- as.character(specimen_management_raw$specimen.number)
 
@@ -221,7 +221,7 @@ males <- specimen_management_noNA_permm_sc %>%
 #                           foretoes.count.t, foretoes.count.b, hindtoes.count.t, hindtoes.count.b), list(mean=mean), .names="{col}_{fn}"))
 
 write.csv(males,
-          file="/Users/michellesu/Desktop/SCALE PROJECT/Analysis/R/michelle_scales_desktop/males.csv", row.names=F)
+          file="males.csv", row.names=F)
 
 
 ## Females
@@ -232,7 +232,7 @@ females <- specimen_management_noNA_permm_sc %>%
   dplyr::summarise(across(c(svl, head.count, midline.count, dorsal.count, dorsolateral.count, chin.count, ventral.count,
                             foretoes.count.t, foretoes.count.b, hindtoes.count.t, hindtoes.count.b), list(mean=mean), .names="{col}_{fn}"))
 write.csv(females,
-          file="/Users/michellesu/Desktop/SCALE PROJECT/Analysis/R/michelle_scales_desktop/females.csv", row.names=F)
+          file="females.csv", row.names=F)
 
 
 
@@ -241,7 +241,7 @@ write.csv(females,
 all_spp <- read.csv("all species.csv")
 
 # read in tree and make spp list
-tree_full <- read.tree("/Users/michellesu/Desktop/SCALE PROJECT/Analysis/R/michelle_scales_desktop/trees_cleaned/Poe.et.al.2017.Timetree_cleaned.tre")
+tree_full <- read.tree("/Users/moth/Dropbox/MAHLER LAB GENERAL SHARED/MAHLER LAB DATA/ANOLIS PHYLO/trees_cleaned/Poe.et.al.2017.Timetree_cleaned.tre")
 tree_spp <- as.data.frame(tree_full$tip.label)
 
 # spp we have in the tree

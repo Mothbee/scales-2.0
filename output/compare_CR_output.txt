@@ -1,0 +1,24 @@
+
+ NOTE: more negative effects represent stronger modular signal! 
+
+
+Effect sizes
+
+    dev.m  funct1.m  funct2.m  funct3.m 
+-2.377105 -2.940448 -2.366212 -2.490084 
+
+Effect sizes for pairwise differences in CR effect size
+
+             dev.m funct1.m  funct2.m  funct3.m
+dev.m    0.0000000 1.237641 0.2206879 0.3655064
+funct1.m 1.2376407 0.000000 1.0738918 1.0055752
+funct2.m 0.2206879 1.073892 0.0000000 0.1429668
+funct3.m 0.3655064 1.005575 0.1429668 0.0000000
+
+P-values
+
+             dev.m  funct1.m  funct2.m  funct3.m
+dev.m    1.0000000 0.2158493 0.8253354 0.7147334
+funct1.m 0.2158493 1.0000000 0.2828712 0.3146200
+funct2.m 0.8253354 0.2828712 1.0000000 0.8863164
+funct3.m 0.7147334 0.3146200 0.8863164 1.0000000
