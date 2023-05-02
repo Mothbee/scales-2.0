@@ -1,14 +1,6 @@
 setwd("/Users/moth/Downloads/SCALE PROJECT/Analysis/R/michelle_scales_desktop")
 
-########### PERSONAL ACCESS TOKEN: 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
-########### NEW PAT as of March 12: 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
-########### NEW PAT as of June 16 NEVER EXPIRES: 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
-# ugh may 1 2023: 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
-
-#install.packages("gitcreds")
-#gitcreds::gitcreds_set() # set the bottom one above
-
-#install.packages("usethis")
+#gitcreds::gitcreds_set()
 
 # usethis::create_from_github(
 #   "https://github.com/Mothbee/scales-2.0.git",
