@@ -249,5 +249,6 @@ in_tree <- all_spp[all_spp$Row.Labels %in% tree_spp$`tree_full$tip.label`, ]
 
 missing<- as.data.frame(setdiff(in_tree$Row.Labels, males$species))
 
-
+write.csv(missing,
+          file="missing spp.csv", row.names=F)
 
